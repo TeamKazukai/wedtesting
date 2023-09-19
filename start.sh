@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/azanhelpdesk/Dq-Tom-New.git /Dq-Tom-New
+  git clone https://github.com/TeamKazukai/wedtesting.git /
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Dq-Tom-New
+  git clone $UPSTREAM_REPO /wedtesting
 fi
-cd /Dq-Tom-New
+cd /wedtesting
 pip3 install -U -r requirements.txt
-echo "Starting Dq-Tom-New...."
+echo "Starting wednesday...."
 python3 bot.py
